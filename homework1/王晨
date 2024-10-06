@@ -1,0 +1,36 @@
+#include <iostream>
+
+int main() {
+    int num1, num2;
+    int operation;
+    int result;
+
+    // 获取用户输入的两个整数
+    std::cout << "请输入第一个整数: ";
+    std::cin >> num1;
+    std::cout << "请输入第二个整数: ";
+    std::cin >> num2;
+
+    // 提示用户选择操作
+    std::cout << "请选择操作：\n";
+    std::cout << "1. 加法\n";
+    std::cout << "2. 减法\n";
+    std::cout << "请输入操作（1 或 2）: ";
+    std::cin >> operation;
+
+    // 根据用户的选择执行相应的操作
+    if (operation == 1) {
+        result = num1 + num2;
+        std::cout << num1 << " + " << num2 << " 的结果是 " << result << std::endl;
+    } else if (operation == 2) {
+        result = num1 - num2;
+        std::cout << num1 << " - " << num2 << " 的结果是 " << result << std::endl;
+    } else {
+        std::cout << "无效的操作。请输入 1 或 2。" << std::endl;
+    }
+
+    return 0;
+}
+
+
+
